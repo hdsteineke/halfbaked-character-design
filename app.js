@@ -81,7 +81,7 @@ catchphraseButton.addEventListener('click', () => {
 
 function displayStats() {
     // text content of the reportEl to tell the user how many times they've changed each piece of the state
-    reportEl.textContent = `You have changed the top ${headCount} times, the middle ${midCount} times, and the bottom ${bottomCount} times.`
+    reportEl.textContent = `You have changed the top ${headCount} times, the middle ${midCount} times, and the bottom ${bottomCount} times.`;
 
 }
 
