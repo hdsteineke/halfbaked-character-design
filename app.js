@@ -76,7 +76,7 @@ catchphraseButton.addEventListener('click', () => {
     catchphraseInput.value = '';
    
     // update the dom to show the new catchphrases (refactor to/call displayCatchphrases to do this work)
-
+    displayCatchphrases();
 });
 
 function displayStats() {
@@ -91,6 +91,15 @@ function displayCatchphrases() {
 
 
     // loop through each catchphrase in state
+    for (let catchPhrase of catchPhrases) {
+        const phraseDiv = document.createElement('div');
+
+        phraseDiv.classList.add('catchPhrase');
+        phraseDiv.textContent = catchPhrase;
+
+        catchphrasesEl.append(phraseDiv);
+        
+    }
    
     // and for each catchphrase
     
